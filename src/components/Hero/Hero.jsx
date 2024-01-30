@@ -1,10 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
 import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
 import personal from "./personal-photo.jpg";
 
 const Hero = () => {
+  const [experience, setExperience] = useState({ years: 0, months: 0 });
+
+  useEffect(() => {
+    // Start date of experience
+    const startDate = new Date("02/08/2021");
+
+    // Current date
+    const currentDate = new Date();
+
+    // Calculate the difference in months and years
+    const diffInMonths =
+      (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+      (currentDate.getMonth() - startDate.getMonth());
+    const years = Math.floor(diffInMonths / 12);
+    const months = diffInMonths % 12;
+
+    setExperience({ years, months });
+  }, []);
+  // const startDate = new Date("02/08/2021");
+  // const [experience, setExperience] = useState(calculateExperience(startDate));
+
+  // function calculateExperience(startDate) {
+  //   const currentDate = new Date();
+  //   const diffInMilliseconds = currentDate - startDate;
+  //   const years = diffInMilliseconds / (365 * 24 * 60 * 60 * 1000);
+  //   return years.toFixed(1);
+  // }
+
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setExperience(calculateExperience(startDate));
+  //   }, 1000); // Update experience every second (you can adjust the interval as needed)
+
+  //   return () => clearInterval(intervalId);
+  // }, [startDate]);
   return (
     <section className={`paddings ${css.wrapper}`}>
       <motion.div
@@ -54,7 +89,9 @@ const Hero = () => {
             variants={fadeIn("right", "tween", 0.3, 1)}
             className={css.experience}
           >
-            <div className="primaryText">2.5</div>
+            <div className="primaryText">
+              {experience.years}.{experience.months}
+            </div>
             <div className="secondaryText">
               <div>Years</div>
               <div>Experience</div>

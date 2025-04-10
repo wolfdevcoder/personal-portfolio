@@ -129,3 +129,11 @@ body {
   top: -100px;
   visibility: hidden;
 }
+
+a {
+  text-decoration: none;
+
+  span {
+    text-decoration: none;
+  }
+}

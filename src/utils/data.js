@@ -111,56 +111,56 @@ export const officeProjects = [
     title: "Docthub",
     description:
       "Contributed to frontend development of a healthcare platform using Next Js. Implemented dynamic routing, reusable components, and API integration for a seamless user experience.",
-    image: "/public/docthub_bg.webp",
+    image: "/docthub_bg.webp",
     link: "https://www.docthub.com/",
   },
   {
     title: "Docthub Jobs",
     description:
       "Developed job listing and filtering features using Next Js. Integrated secure forms and optimized API handling for efficient job searches and applications.",
-    image: "/public/JobsGraphic1.webp",
+    image: "/JobsGraphic1.webp",
     link: "https://jobs.docthub.com/",
   },
   {
     title: "Docthub Courses",
     description:
       "Created modular UI components and integrated third-party APIs to display healthcare-related courses. Focused on responsive design and SEO optimization.",
-    image: "/public/CourseGraphic1.webp",
+    image: "/CourseGraphic1.webp",
     link: "https://courses.docthub.com/",
   },
   {
     title: "Docthub Events",
     description:
       "Implemented event listing, calendar view, and RSVP functionalities. Optimized performance with lazy loading and enhanced UX across devices.",
-    image: "/public/EventsGraphic1.webp",
+    image: "/EventsGraphic1.webp",
     link: "https://events.docthub.com/",
   },
   {
     title: "Docthub Enterprise",
     description:
       "Built enterprise dashboard using React and Redux. Developed analytics widgets and implemented role-based access control for admin-level tools.",
-    image: "/public/maxresdefault.jpg",
+    image: "/maxresdefault.jpg",
     link: "https://www.docthub.com/enterprise-solutions",
   },
   {
     title: "Docthub Accounts",
     description:
       "Integrated authentication system using JWT and developed user profile management modules with secure password recovery and session tracking.",
-    image: "/public/OIP.jpeg",
+    image: "/OIP.jpeg",
     link: "https://accounts.docthub.com/",
   },
   {
     title: "Docthub Console",
     description:
       "Designed internal tools for content and configuration management. Built scalable admin interface focusing on modular code and permission handling.",
-    image: "/public/d4009b7b8f98f5c0f7011c4c94ed1db4.jpg",
+    image: "/d4009b7b8f98f5c0f7011c4c94ed1db4.jpg",
     link: "https://console.docthub.com/",
   },
   {
     title: "Docthub Membership Management",
     description:
       "Developed membership registration, role assignments, and payment features. Built dashboards to manage member activities and committee roles.",
-    image: "/public/easeYourBurdenSection.webp",
+    image: "/easeYourBurdenSection.webp",
     link: "https://www.docthub.com/membership-management",
   },
 ];

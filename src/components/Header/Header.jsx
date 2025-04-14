@@ -48,7 +48,7 @@ const Header = () => {
             className={`flexCenter ${css.phone}`}
             onClick={() => navigator.clipboard.writeText("+420 728 680 936")}
           >
-            <p>+420 728 680 936</p>
+            <p>+1 704 352 1683</p>
             <BiPhoneCall size={"40px"} />
           </li>
         </ul>
